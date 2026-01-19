@@ -1,14 +1,11 @@
 apply plugin: 'com.android.application'
 
-android {
+    android {
+    namespace 'com.andorstrail.qradar'
     compileSdkVersion 33
+    // ... rest of the file
 
-    defaultConfig {
-        applicationId "com.andorstrail.qradar"
-        minSdkVersion 21
-        targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
+        
     }
 
     buildTypes {
