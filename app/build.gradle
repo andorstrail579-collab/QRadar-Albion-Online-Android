@@ -23,9 +23,22 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
+    // Add these lines to connect the other folders in your project
+    implementation project(':vpnadaptercore')
+    implementation project(':lib')
+
+    // Standard Android libraries
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // These are common libraries used in this project
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'org.jsoup:jsoup:1.15.4'
+    implementation 'org.greenrobot:eventbus:3.3.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
 }
+
 
         
