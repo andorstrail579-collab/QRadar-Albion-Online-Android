@@ -1,18 +1,14 @@
 apply plugin: 'com.android.application'
 
-android
-{
-    signingConfigs
-    {
-        release
-        {
-            storeFile file('C:\\Users\\jdeleon\\StudioProjects\\QRadar-Albion-Online-Android\\key\\key.jks')
-            storePassword 'Usuario@2024#'
-            keyPassword 'Usuario@2024#'
-            keyAlias '33'
-        }
-    }
-    compileSdkVersion 33
+android {
+    compileSdkVersion 33 // Add this line if it's missing or change the number
+    
+    defaultConfig {
+        applicationId "com.example.qradar" // Or whatever name is there
+        minSdkVersion 21
+        targetSdkVersion 33
+        // ... rest of the code
+
     defaultConfig
     {
         applicationId 'com.minhui.networkcapture.albion'
