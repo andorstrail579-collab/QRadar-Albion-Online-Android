@@ -1,1 +1,2 @@
-include ':app', ':vpnadaptercore'
+include ':app', ':vpnadaptercore', ':lib'
+
